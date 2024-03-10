@@ -1,6 +1,4 @@
-package Animals;
-
-import java.time.LocalDate;
+package Clinic.Human;
 
 public class Owner {
     int deafultIndex = 0;

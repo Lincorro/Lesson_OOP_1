@@ -1,42 +1,36 @@
-import Animals.Animal;
-import Animals.*;
+import Clinic.Human.Owner;
+import Clinic.Animals.InterfaceForAnimals.Flyable;
+import Clinic.Animals.Duck;
+import Clinic.Animals.Lion;
+import Clinic.VeterinaryClinic.VeterinaryClinic;
+
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /*
+Отличие абстрактного класса от интерфейса: Интерфейс не хранит состояние.
+Создать класс Doctor и подумать над его состоянием и поведением.
+Создать класс Nurse(медсестра) и подумать над его состоянием и поведением.
 
-1) Добавить в класс Animal public методы двигаться(toGo), летать(fly), плавать(swim).
+Создайте интерфейсы Goable, Flyable, Swimable. У интерфейсов должны быть
+методы получения скорости заданного действия: double run(), double fly(), double swim()
 
-2) Создать по два класса
-наследника Animal, умеющих летать, плавать, бегать(животное может как уметь что-то одно, так и все сразу).
+Добавьте наследников этим интерфейсам, но таким образом,
+чтобы у каждого интерфейса было минимум по два наследника (при необходимости, добавьте в приложение новые классы)
 
-3) В main добиться того, чтобы при вызове метода действия, которое конкретное животное не умеет, оно этого не делало (кошки не летают, рыбы не ходят)
+Создать класс ВетеринарнаяКлиника (VeterinaryClinic)
+У ветеринарной клиники добавьте методы получения всех бегающих, всех плавающих и всех летающих,
+а также методы для работы с персоналом клиники.
 
-4) В файле readme.md в репозитории гитхаб описать
-какие проблемы в таком проектировании Вы увидели,
-а также там же написать возникшие при выполнении дз вопросы
-(если они есть)
-
-Формат сдачи:
-Ссылка на гитхаб
-
+Формат сдачи: ссылка на гитхаб
  */
 public class Main {
 
+
     public static void main(String[] args) {
-        Lion animal = new Lion("Bobik", 100, LocalDate.now(), new Owner());
-        Animal duck = new Duck("Дональд", 25,LocalDate.now(), new Owner() );
-
-        System.out.println(animal.toString());
-        System.out.println("-------------");
-        animal.toMove();
-        animal.toFly();
-        animal.lifeCycle();
-        System.out.println("-------------");
-        System.out.println(duck.toString());
-        duck.toMove();
-
+        VeterinaryClinic clinic = new VeterinaryClinic();
+        clinic.veterinaryClinic();
 
         }
-    }
+
+}
