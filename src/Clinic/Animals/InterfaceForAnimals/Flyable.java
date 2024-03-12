@@ -6,6 +6,9 @@ public interface Flyable {
     }
 
     double fly();
+    public default boolean flyable(){
+        return true;
+    }
 
     default void geSpeedFly(){
         System.out.println(fly() + " км/ч");

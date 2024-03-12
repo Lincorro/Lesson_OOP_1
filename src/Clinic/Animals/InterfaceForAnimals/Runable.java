@@ -11,4 +11,7 @@ public interface Runable {
         System.out.println(run() + " км/ч");
 
     }
+    public default boolean runable(){
+        return true;
+    }
 }

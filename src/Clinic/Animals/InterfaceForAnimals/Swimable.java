@@ -12,4 +12,7 @@ public interface Swimable {
         System.out.println(swim() + " км/ч");
 
     }
+    public default boolean swimable(){
+        return true;
+    }
 }

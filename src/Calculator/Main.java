@@ -1,11 +1,4 @@
-import Clinic.Human.Owner;
-import Clinic.Animals.InterfaceForAnimals.Flyable;
-import Clinic.Animals.Duck;
-import Clinic.Animals.Lion;
-import Clinic.VeterinaryClinic.VeterinaryClinic;
-
-import java.time.LocalDate;
-import java.util.*;
+package Calculator;
 
 /*
 Отличие абстрактного класса от интерфейса: Интерфейс не хранит состояние.
@@ -28,8 +21,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        VeterinaryClinic clinic = new VeterinaryClinic();
-        clinic.veterinaryClinic();
 
         }
 
