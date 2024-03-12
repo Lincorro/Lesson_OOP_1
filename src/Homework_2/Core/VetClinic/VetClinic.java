@@ -28,8 +28,7 @@ public class VetClinic {
     public void removePatient(Animal patient){
         patients.remove(patient);
     }
-
-    public List<Animal> getSwimables(){
+    public  List<Animal> getSwimables(){
         List<Animal> result = new ArrayList<>();
         for (Animal patient: patients) {
             if (patient instanceof Swimable) {
@@ -56,5 +55,10 @@ public class VetClinic {
         }
         return result;
     }
-
+    public List<Staf> getStafs() {
+        return stafs;
+    }
+    public List<Animal> getPatients() {
+        return patients;
+    }
 }

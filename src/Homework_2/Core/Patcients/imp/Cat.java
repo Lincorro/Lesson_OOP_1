@@ -1,7 +1,8 @@
-package Homework_2.Core.Patcients;
+package Homework_2.Core.Patcients.imp;
 
 import Clinic.Human.Owner;
 import Homework_2.Core.Goable;
+import Homework_2.Core.Patcients.Animal;
 
 import java.time.LocalDate;
 

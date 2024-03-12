@@ -18,6 +18,15 @@ public abstract class Staf {
         this.phoneNumber = phoneNumber;
     }
 
+    @Override
+    public String toString() {
+        return"name='" + name + '\'' +
+                ", Shurname='" + Shurname + '\'' +
+                ", id='" + id + '\'' +
+                ", age=" + age +
+                ", phoneNumber=" + phoneNumber +"\n";
+    }
+
     public String getName() {
         return name;
     }

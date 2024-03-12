@@ -47,4 +47,12 @@ public abstract class Animal {
     public void setWeight(float weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+        return"name='" + name + '\'' +
+                ", owner=" + owner +
+                ", age=" + age +
+                ", weight=" + weight +"\n";
+    }
 }

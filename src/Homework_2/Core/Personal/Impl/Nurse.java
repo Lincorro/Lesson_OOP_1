@@ -9,7 +9,4 @@ public class Nurse extends Staf {
         super(name, shurname, id, age, phoneNumber);
     }
 
-    public String getName() {
-        return name;
-    }
 }

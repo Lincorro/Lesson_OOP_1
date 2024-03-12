@@ -1,4 +1,4 @@
-package Homework_2.Core.Patcients;
+package Homework_2.Core.Patcients.imp;
 
 public class Owner {
     int deafultIndex = 0;
