@@ -15,11 +15,12 @@ public class Main {
         VetClinic clinic = new VetClinic();
         Hamster Bobr = new Hamster("Бобр",12, LocalDate.now(),new Owner() );
         clinic.adPatient(Bobr);
-//        clinic.adPatient(new Dog("Бобик",4,LocalDate.now(), new Owner()));
-//        clinic.adPatient(new Duck("Дональд", 6, LocalDate.now(),new Owner()));
+        clinic.adPatient(new Duck("Дональд", 6, LocalDate.now(),new Owner()));
         System.out.println(clinic.getPatients());
         Doctor doctor = new Doctor("Игорь", "Васильевич", "74AD7", LocalDate.now(), 89888);
-        doctor.doDiagnose(Bobr);
+
+
+
 
 
     }

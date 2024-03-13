@@ -3,15 +3,21 @@ package Homework_2.Core.VetClinic;
 import Homework_2.Core.Flyable;
 import Homework_2.Core.Goable;
 import Homework_2.Core.Patcients.Animal;
+import Homework_2.Core.Personal.Impl.Doctor;
 import Homework_2.Core.Personal.Staf;
 import Homework_2.Core.Swimable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class VetClinic {
+
     private final List<Staf> stafs;
     private final List<Animal> patients;
+
+    private HashMap<Doctor, List<Animal>> doctorsStac;
     public VetClinic() {
         this.patients = new ArrayList<>();
         this.stafs = new ArrayList<>();
@@ -61,4 +67,6 @@ public class VetClinic {
     public List<Animal> getPatients() {
         return patients;
     }
+
+
 }
